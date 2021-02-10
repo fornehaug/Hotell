@@ -147,6 +147,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 100%;
     
     
     
@@ -154,25 +155,23 @@ h1 {
 }
 
 .bilde {
-    width: 50%;
+    max-width: 35%;
     display: grid;
     place-content: center;
     min-width: 300px;
-    max-width: 640px;
     margin: 0.5em;
 }
 
 
 
 .text {
-background-color: var(--main-third);
-padding: 2em;
-width: 50%;
-max-width: 640px;
-display: grid;
-place-content: center;
-min-width: 300px;
-margin: 0.5em;
+    background-color: var(--main-third);
+    padding: 2em;
+    max-width: 35%;
+    display: grid;
+    place-content: center;
+    min-width: 300px;
+    margin: 0.5em;
 }
 
 .text a {
@@ -330,7 +329,7 @@ footer {
 
 }
 
-@media (max-width: 730px) {
+@media (max-width: 701px) {
 
     .text2 {
         order: 2;
