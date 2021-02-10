@@ -1,0 +1,352 @@
+/* Generellt oppsett START */
+
+:root {
+    --main-dark: #62959c;
+    --main-light: #c19277;
+    --main-third: #e1bc91;
+    --main-fourth: #e3d0b9;
+    --main-letters: #ffffff;
+    --main-black: #000000;
+}
+
+*, html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1800px;
+    width: 90%;
+    margin: auto;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Generellt oppsett STOPP */
+
+
+  header {
+      background: var(--main-dark);
+      color: var(--main-letters);
+  }
+
+  /* Kode Navbar CSS START */
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 4rem;
+    margin: 0.3em;
+}
+
+.navbar-links ul {
+    font-size: 1.3rem;
+    margin: 0;
+    padding-right: 1em;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--main-letters);
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    text-decoration: underline;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--main-letters);
+    border-radius: 10px;
+}
+
+
+
+/* Kode Navbar CSS SLUTT */
+
+
+/* Innhold start */
+
+.hero {
+    height: 500px;
+    width: 100%;
+    background: url(Images/large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    
+}
+
+h1 {
+    text-align: center;
+    color: var(--main-letters);
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.textbox {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: .5em 1em;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.section1 {
+    background: var(--main-light);
+    padding: 2em;
+    
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+    
+    
+}
+
+.bilde {
+    width: 50%;
+    display: grid;
+    place-content: center;
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0.5em;
+}
+
+
+
+.text {
+background-color: var(--main-third);
+padding: 2em;
+width: 50%;
+max-width: 640px;
+display: grid;
+place-content: center;
+min-width: 300px;
+margin: 0.5em;
+}
+
+.text a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--main-black);
+    font-weight: bolder;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
+
+.section2 {
+    background: lightgray;
+    padding: 2em;
+    
+}
+
+
+
+.text2 {
+    background: var(--main-fourth);
+}
+
+.text3 {
+    background: var(--main-fourth);
+    
+}
+
+.section3 {
+    background: whitesmoke;
+}
+
+.container-map {
+    padding: 2em;
+    display: grid;
+    place-content: center;
+    
+}
+
+h3 {
+    margin: 1em auto;
+    font-size: 0.9rem;
+}
+
+iframe {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+
+
+/* Innhold Stopp */
+
+
+/* Footer CSS Start */
+
+footer {
+    /* margin-top: 100px; */
+    background-color: var(--main-dark);
+    height: 200px;
+    line-height: 1.5em;
+    text-align: center;
+    color: var(--main-letters);
+    padding-top: 2em;
+    
+    
+}
+
+.bunntekst {
+    display: inline-block;
+    text-align: left;
+    justify-self: start;
+}
+
+.bunntekst ul li {
+    list-style: none;
+    
+}
+.bunntekst ul li a{
+    text-decoration: none;
+    color: var(--main-letters);
+}
+
+.bunntekst ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer CSS End */
+
+
+/* Media Queries */
+
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+        margin-top: 0.4em;
+    }
+
+    .logo {
+        font-size: 2rem;
+        margin: 0.3em;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        font-size: 1.1rem;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2, p {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .text a {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 730px) {
+
+    .text2 {
+        order: 2;
+    }
+    
+    .text3 {
+        order: 4;
+    }
+    
+    .bilde2 {
+        order: 1;
+    }
+    
+    .bilde3 {
+        order: 3;
+    }
+
+
+}
