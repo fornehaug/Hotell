@@ -172,6 +172,7 @@ h1 {
     place-content: center;
     min-width: 300px;
     margin: 0.5em;
+    max-height: 430px;
 }
 
 .text a {
@@ -194,11 +195,11 @@ h1 {
 
 
 .text2 {
-    background: var(--main-fourth);
+    background: var(--main-third);
 }
 
 .text3 {
-    background: var(--main-fourth);
+    background: var(--main-third);
     
 }
 
@@ -223,6 +224,9 @@ iframe {
     margin: auto;
 }
 
+h2 {
+    font-size: 1.4rem;
+}
 
 
 
@@ -232,7 +236,6 @@ iframe {
 /* Footer CSS Start */
 
 footer {
-    /* margin-top: 100px; */
     background-color: var(--main-dark);
     height: 200px;
     line-height: 1.5em;
@@ -315,8 +318,16 @@ footer {
         font-size: 2rem;
     }
 
-    h2, p {
-        font-size: 0.9rem;
+    h2 {
+        font-size: 0.5rem;
+    }
+
+    p {
+        font-size: 0.5rem;
+    }
+
+    .text {
+        padding: 1em;
     }
 
     .container {
@@ -329,7 +340,11 @@ footer {
 
 }
 
-@media (max-width: 701px) {
+@media (max-width: 768px) {
+
+    .text {
+        padding: 1em;
+    }
 
     .text2 {
         order: 2;
@@ -345,6 +360,14 @@ footer {
     
     .bilde3 {
         order: 3;
+    }
+
+    h2 {
+        font-size: 0.7rem;
+    }
+
+    p {
+        font-size: 0.6rem;
     }
 
 
