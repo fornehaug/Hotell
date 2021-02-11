@@ -149,7 +149,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
+    width: 60%;
+    margin: auto;
     
     
     
@@ -157,10 +158,10 @@ h1 {
 }
 
 .bilde {
-    max-width: 35%;
+    max-width: 40%;
     display: grid;
     place-content: center;
-    min-width: 300px;
+    min-width: 200px;
     margin: 0.5em;
 }
 
@@ -168,17 +169,18 @@ h1 {
 
 .text {
     background-color: var(--main-third);
-    padding: 2em;
-    max-width: 35%;
+    padding: 1em;
+    max-width: 40%;
     display: grid;
     place-content: center;
-    min-width: 300px;
+    min-width: 200px;
     margin: 0.5em;
     max-height: 430px;
 }
 
 p {
-    line-height: 1.3rem;
+    line-height: 1.1rem;
+    font-size: 0.8rem;
 }
 
 .text a {
@@ -342,7 +344,7 @@ footer {
     }
 
     .text a {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
 }
@@ -350,7 +352,7 @@ footer {
 @media (max-width: 768px) {
 
     .text {
-        padding: 1em;
+        padding: 0.5em;
     }
 
     .text2 {
@@ -369,6 +371,10 @@ footer {
         order: 3;
     }
 
+    h1 {
+        font-size: 1.8rem;
+    }
+
     h2 {
         font-size: 0.8rem;
     }
@@ -378,4 +384,21 @@ footer {
     }
 
 
+}
+
+@media (max-width: 1200px) {
+    
+    h1 {font-size: 2.1rem;}
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .text a {
+        font-size: 0.8rem;
+    }
 }
