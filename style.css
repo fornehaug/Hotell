@@ -380,7 +380,11 @@ footer {
     }
 
     p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+    }
+
+    .text a {
+        font-size: 0.7rem;
     }
 
 
@@ -395,7 +399,7 @@ footer {
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .text a {
