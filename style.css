@@ -18,6 +18,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    width: 100%;
     height: 100vh;
 }
 
@@ -57,12 +58,12 @@ h1, h2, h3, p {
 }
 
 .logo {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0.3em;
 }
 
 .navbar-links ul {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0;
     padding-right: 1em;
     display: flex;
@@ -106,10 +107,10 @@ h1, h2, h3, p {
 /* Kode Navbar CSS SLUTT */
 
 
-/* Innhold start */
+/* Hero Start */
 
 .hero {
-    height: 500px;
+    height: 300px;
     width: 100%;
     background: url(Images/large.jpg);
     background-repeat: no-repeat;
@@ -125,7 +126,7 @@ h1, h2, h3, p {
 h1 {
     text-align: center;
     color: var(--main-letters);
-    font-size: 3.5rem;
+    font-size: 2rem;
     padding: 0;
     margin: 0;
 }
@@ -136,56 +137,44 @@ h1 {
     height: fit-content;
     border-radius: 5px;
 }
+/* Hero slutt */
+
+/* Innhold start */
+
+section {
+    padding: 1em;
+}
+
 
 .section1 {
     background: var(--main-light);
-    padding: 2em;
-    
-}
-
-
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 60%;
-    margin: auto;
-    
-    
     
     
 }
 
-.bilde {
-    max-width: 40%;
-    display: grid;
-    place-content: center;
-    min-width: 200px;
-    margin: 0.5em;
+.innhold {
+    width: 100%;
 }
 
+h2 {
+    font-size: 1rem;
+}
 
 
 .text {
-    background-color: var(--main-third);
+    background-color: var(--main-fourth);
     padding: 1em;
-    max-width: 40%;
-    display: grid;
-    place-content: center;
-    min-width: 200px;
-    margin: 0.5em;
-    max-height: 430px;
 }
 
-p {
-    line-height: 1.1rem;
-    font-size: 0.8rem;
+.text p {
+    font-size: 0.75rem;
 }
+
+
 
 .text a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.6rem;
     color: var(--main-black);
     font-weight: bolder;
 }
@@ -196,44 +185,11 @@ p {
 
 .section2 {
     background: lightgray;
-    padding: 2em;
     
 }
 
-
-
-.text2 {
+.text2, .text3 {
     background: var(--main-third);
-}
-
-.text3 {
-    background: var(--main-third);
-    
-}
-
-.section3 {
-    background: whitesmoke;
-}
-
-.container-map {
-    padding: 2em;
-    display: grid;
-    place-content: center;
-    
-}
-
-h3 {
-    margin: 1em auto;
-    font-size: 0.9rem;
-}
-
-iframe {
-    max-width: 80%;
-    margin: auto;
-}
-
-h2 {
-    font-size: 1.2rem;
 }
 
 
@@ -250,7 +206,7 @@ footer {
     text-align: center;
     color: var(--main-letters);
     padding-top: 2em;
-    font-size: 1.2rem;
+    font-size: 1rem;
     
     
 }
@@ -280,7 +236,10 @@ footer {
 /* Media Queries */
 
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
+
+/* Media Navbar CSS START */
+
     .toggle-button {
         display: flex;
         margin-top: 0.4em;
@@ -318,91 +277,98 @@ footer {
     .navbar-links.active {
         display: flex;
     }
+/* Media Navbar CSS SLUTT */
+
+
+
+
+}
+
+
+@media (min-width: 751px) {
 
     .hero {
-        height: 200px;
+        height: 600px;
     }
+    
 
     h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 0.5rem;
-    }
-
-    p {
-        font-size: 0.5rem;
-    }
-
-    .text {
-        padding: 1em;
+        font-size: 3rem;
     }
 
     .container {
-        justify-content: center;
+        display: flex;
+        justify-content: space-around;
+        margin: 2em;
     }
-
-    .text a {
-        font-size: 0.7rem;
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    .text {
-        padding: 0.5em;
+    
+    .innhold {
+        width: 40%;
     }
 
     .text2 {
-        order: 2;
-    }
-    
-    .text3 {
-        order: 4;
-    }
-    
-    .bilde2 {
         order: 1;
     }
+
+    .bilde2 {
+        order: 2;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
     
-    .bilde3 {
-        order: 3;
+    
+    .text p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .text a {
+        font-size: 1rem;
+    }
+
+    footer {
+        height: 400px;
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+    .logo {
+        font-size: 4rem;
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 4rem;
     }
 
     h2 {
-        font-size: 0.8rem;
+        font-size: 2.8rem;
     }
 
-    p {
-        font-size: 0.6rem;
+    .text {
+        padding: 2em;
     }
-
-    .text a {
-        font-size: 0.7rem;
-    }
-
-
-}
-
-@media (max-width: 1200px) {
     
-    h1 {font-size: 2.1rem;}
-
-    h2 {
-        font-size: 0.9rem;
-    }
-
-    p {
-        font-size: 0.8rem;
+    
+    .text p {
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
 
     .text a {
-        font-size: 0.8rem;
+        font-size: 2rem;
     }
+
+    .navbar-links ul {
+        font-size: 2rem;
+    }
+
+
 }
+
+
+
